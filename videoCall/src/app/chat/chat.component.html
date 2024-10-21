@@ -1,7 +1,7 @@
 <mat-grid-list cols="2" rowHeight="2:1">
   <mat-grid-tile>
     <p class="video-description">local:</p>
-    <video #local_video [autoplay]="true" [muted]="true"></video>
+    <video #local_video class="mirror-video" [autoplay]="true" [muted]="true"></video>
   </mat-grid-tile>
 
   <mat-grid-tile>
@@ -10,7 +10,7 @@
   </mat-grid-tile>
 </mat-grid-list>
 
-<button mat-raised-button color="primary">Start local</button>
-<button mat-raised-button color="primary">Stop local</button>
+<button mat-raised-button color="primary" (click)="startLocalVideo()">Start local</button>
+<button mat-raised-button color="primary" (click)="pauseLocalVideo()">Stop local</button>
 <button mat-raised-button color="primary">Call</button>
 <button mat-raised-button color="primary">HangUp</button>

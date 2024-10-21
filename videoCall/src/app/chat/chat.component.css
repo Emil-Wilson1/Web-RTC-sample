@@ -2,6 +2,10 @@ video{
   width: 100%;
   background: grey;
 }
+.mirror-video {
+  transform: scaleX(-1);
+}
+
 p.video-description{
   position: absolute;
   top: 0px;
@@ -10,3 +14,4 @@ p.video-description{
 button{
   margin: 1rem;
 }
+
